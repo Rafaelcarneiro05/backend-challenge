@@ -2,10 +2,10 @@ pre-commit:
   parallel: false
   commands:
     format:
-      glob: 'src/**/*.ts'
+      glob: '{src,test}/**/*.ts'
       run: bun run format:check
     lint:
-      glob: 'src/**/*.ts'
+      glob: '{src,test}/**/*.ts'
       run: bun run lint
     typecheck:
       run: bun run typecheck
