@@ -27,6 +27,12 @@ export default [
     },
   },
   {
+    files: ['src/infrastructure/persistence/migrations/**/*.ts'],
+    rules: {
+      '@typescript-eslint/require-await': 'off',
+    },
+  },
+  {
     files: ['src/domain/**/*.ts'],
     rules: {
       'no-restricted-imports': [
