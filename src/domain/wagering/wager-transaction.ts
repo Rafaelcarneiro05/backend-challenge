@@ -1,5 +1,8 @@
 import { Money } from '../money/money';
+import { LedgerDirection } from '../shared/ledger-direction';
 import { FailureCode } from './failure-code';
+
+export { LedgerDirection };
 
 export enum WagerTransactionKind {
   Opening = 'OPENING',
@@ -16,11 +19,6 @@ export enum WagerTransactionStatus {
   Processed = 'PROCESSED',
   Rejected = 'REJECTED',
   Failed = 'FAILED',
-}
-
-export enum LedgerDirection {
-  Debit = 'DEBIT',
-  Credit = 'CREDIT',
 }
 
 export class OpeningNotAllowedError extends Error {}
